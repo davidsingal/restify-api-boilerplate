@@ -1,0 +1,41 @@
+{
+  "name": "restify-api-layout",
+  "version": "1.0.0",
+  "description": "An API for mobile application",
+  "main": "server.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "grunt test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:davidsingal/restify-api-layout.git"
+  },
+  "keywords": [
+    "api"
+  ],
+  "author": "David Inga <davidsingal@icloud.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/davidsingal/restify-api-layout/issues"
+  },
+  "homepage": "https://github.com/davidsingal/restify-api-layout",
+  "devDependencies": {
+    "grunt": "^0.4.5",
+    "grunt-contrib-jshint": "^0.11.0",
+    "grunt-mocha-cli": "^1.12.0",
+    "jshint-stylish": "^1.0.1",
+    "load-grunt-tasks": "^3.1.0",
+    "time-grunt": "^1.1.0"
+  },
+  "dependencies": {
+    "bcrypt": "^0.8.1",
+    "chai": "^2.1.0",
+    "mocha": "^2.1.0",
+    "mongoose": "^3.8.24",
+    "mongoose-validate": "0.0.5",
+    "restify": "^2.8.5"
+  }
+}
