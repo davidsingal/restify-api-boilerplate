@@ -20,6 +20,20 @@ module.exports = function(grunt) {
       ]
     },
 
+    jscs: {
+      src: [
+        '*.js',
+        'app/{,*/}*.js',
+        'config/{,*/}*.js',
+        'test/{,*/}*.js'
+      ],
+      options: {
+        config: '.jscsrc',
+        esnext: true,
+        verbose: true
+      }
+    },
+
     mochacli: {
       options: {
         reporter: 'nyan',
@@ -31,9 +45,10 @@ module.exports = function(grunt) {
   });
 
   grunt.registerTask('default', [
-    'jshint'
+    'jshint',
+    'jscs'
   ]);
 
-  grunt.registerTask('test', ['jshint', 'mochacli']);
+  grunt.registerTask('test', ['jshint', 'jscs', 'mochacli']);
 
 };
